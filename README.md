@@ -1,2 +1,3 @@
 # algorithm_problems
-self-explanatory
+
+Problems taken from LeetCode and *Cracking the Coding Interview*. Expect lots of sloppiness.
