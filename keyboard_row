@@ -19,3 +19,6 @@ def find_words(words)
     
     output
 end
+
+#time complexity is....O(n)?
+#space complexity is O(n)
