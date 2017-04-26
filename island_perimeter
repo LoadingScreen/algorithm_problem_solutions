@@ -20,3 +20,5 @@ def island_perimeter(grid)
     end
     count
 end
+
+# outputs wrong answer. may be two off-by-one errors.
