@@ -1,0 +1,22 @@
+# @param {Integer[][]} grid
+# @return {Integer}
+def island_perimeter(grid)
+    count = 0
+    i = 0
+    while i < grid.size
+        j = 0
+        while j < grid[0].size
+            if grid[i][j] == 1
+                count += (
+                    (grid[i-1][j] != 1 ? 1 : 0) +
+                    (grid[i-1][j] != 1 ? 1 : 0) +
+                    (grid[i][j-1] != 1 ? 1 : 0) +
+                    (grid[i][j+1] != 1 ? 1 : 0)
+                    )
+            end
+            j += 1
+        end
+        i += 1
+    end
+    count
+end
