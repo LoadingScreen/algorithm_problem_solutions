@@ -9,3 +9,5 @@ end
 
 #time complexity O(n)
 #space complexity O(n)
+
+# other people's solutions used reduce with xor in order to single out the single num. This will be slower than the above solution in all but the worst cases.
