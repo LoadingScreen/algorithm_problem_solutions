@@ -1,7 +1,9 @@
 def single_number(nums)
     snums = nums.sort
-    snums.each_with_index do |num, i|
-        return num if (num != snums[i+1]) && i % 2 == 0
+    i = 0
+    while i < snums.size
+        return snums[i] if (snums[i] != snums[i+1])
+        i += 2
     end
 end
 
