@@ -6,4 +6,6 @@ def can_win_nim(n)
     n % 4 != 0
 end
 
+#time complexity O(1)
+#space complexity O(1)
 # Trivially easy.
