@@ -1,0 +1,12 @@
+# https://leetcode.com/problems/detect-capital/#/description
+
+
+def detect_capital_use(word)
+    if word == word.uppercase
+        true
+    elsif word == word.lowercase
+        true
+    elsif (word[0] in [A...Z] )
+end
+
+# unfinished
