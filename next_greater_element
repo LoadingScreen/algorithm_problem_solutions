@@ -1,6 +1,5 @@
-# @param {Integer[]} find_nums
-# @param {Integer[]} nums
-# @return {Integer[]}
+# https://leetcode.com/problems/next-greater-element-i/#/description
+
 def next_greater_element(find_nums, nums)
     result = []
     find_nums.each_with_index do |n, i|
