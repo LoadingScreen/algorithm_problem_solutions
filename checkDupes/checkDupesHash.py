@@ -9,3 +9,7 @@ def checkDupesHash(s):
         h[s[i]] = 2
     print "No duplicates"
     return True
+
+
+# time complexity is O(n)
+# space complexity is O(n)

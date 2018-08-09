@@ -8,3 +8,6 @@ def checkDupesSort(s):
             return False
     print 'no duplicates'
     return True
+
+# time complexity is whatever that of the sorted() function is
+# space complexity is O(n)
