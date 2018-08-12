@@ -6,6 +6,7 @@ def checkPermAllPairs(s1,s2):
     length = len(s2)
     if len(s1) != length:
         print "Nope. Different lengths."
+        return False
     l1, l2 = list(s1), list(s2)
     crossout1 = list([0]*length)
     crossout2 = list([0]*length)

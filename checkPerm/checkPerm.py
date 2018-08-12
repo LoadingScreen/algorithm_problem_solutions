@@ -1,1 +1,3 @@
 from checkPermHash import checkPermHash
+from checkPermSort import checkPermSort
+from checkPermHash import checkPermAllPairs
