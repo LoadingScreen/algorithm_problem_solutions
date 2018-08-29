@@ -1,20 +1,23 @@
 
-
 def palindromePermSort(s):
     if len(s) <= 1:
         print True
         return True
+    elif len(s) < 4:
+        length = len(s)
+    else:
+        length = len(s) - 1
     l = list(s)
     ls = sorted(l)
     pivots = 0
     i = 0
-    while 0 <= i < len(s)-2:
+    while 0 <= i < length - 1:
         if ls[i] == ls[i+1]:
             i += 2
         else:
             i += 1
             pivots += 1
-        # if pivots == 2 or (pivots == 1 and len(s)==2):
+        if pivots == 2:
             print False
             return False
     print True
@@ -37,6 +40,11 @@ def palindromePermHash(s):
     return True
 
 if __name__ == "__main__":
-    while True:
-        s = raw_input(">>> ")
-        palindromePermHash(s)
+    if raw_input("Use the sorting solution (s) or the Hash solution (h)?\n>>> ") == 'h':
+        while True:
+            s = raw_input(">>> ")
+            palindromePermHash(s)
+    else:
+        while True:
+            s = raw_input(">>> ")
+            palindromePermSort(s)
